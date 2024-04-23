@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>simple test</title>
+    <title>Tyler Dickey - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Tyler Dickey's WDD 230 - Web Frontend Development course assignment portal">
+    <meta name="author" content="Tyler Dickey">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
 </head>
 <body>
-    <h1>This is a test</h1>
-    <p>this is just a test to see if it's all working</p>
+    <header>
+        <img src="images/profile.jpg" alt="Picture of Tyler Dickey">
+        <span>Tyler Dickey</span>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="">Chamber</a>
+        <a href="">Site Plan</a>
+        <a href="">Form</a>
+    </nav>
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li>Week 01: <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media Query</a> | <a href="https://codepen.io/Sudo430/pen/yLrGjRr">JS Pen</a></li>
+                <li>Week 02: </li>
+                <li>Week 03: </li>
+                <li>Week 04: </li>
+                <li>Week 05: </li>
+                <li>Week 06: </li>
+                <li>Week 07: </li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Informaion</h2>
+            <p>place holer Informaion</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Tyler Dickey | Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>
