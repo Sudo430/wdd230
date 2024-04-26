@@ -1,0 +1,32 @@
+:root{
+    --backgnd-color:#F4F4F9;
+}
+body{
+    background-color: var(--backgnd-color);
+    font-family: Montserrat;
+    /* color:#221D23; */
+}
+
+#test1, #test2{
+    width: 200px;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 2px;
+}
+#test1{
+    background-color: #08bdbd;
+}
+
+#test2{
+    background-color: #27FB6B;
+}
+
+#test3{
+    width: min-content;
+    padding: 5px;
+    border: solid 2px black;
+    border-radius: 5px;
+    
+}
