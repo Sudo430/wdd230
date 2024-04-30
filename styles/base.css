@@ -30,6 +30,26 @@ Header span{
     font-size: xx-large;
 }
 
+
+#menu{
+    font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	top: 18rem;
+	right: 2rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+
 nav{
     display: flex;
     flex-direction: column;
@@ -37,9 +57,26 @@ nav{
     justify-items: center;
 }
 nav a{
+    display: none;
     margin-top: 0px;
     padding: 5px;
 }
+
+.open > a {
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 main{
     display: grid;

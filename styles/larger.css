@@ -1,12 +1,15 @@
 @media screen and (min-width: 650px) {
 
-
+    #menu{
+        display: none;
+    }
 
     nav{
         flex-direction: row;
         justify-content: center;
     }
     nav a{
+        display: block;
         margin-right: 20px;
         margin-left: 20px;
         font-size: larger;
