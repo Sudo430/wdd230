@@ -60,10 +60,12 @@ Header span{
 
 #menu::before {
 	content: "☰";
+    color: var(--font-color);
 }
 
 #menu.open::before {
 	content: "X";
+    color: var(--font-color);
 }
 
 
