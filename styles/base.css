@@ -1,19 +1,37 @@
 :root{
     --page-width: 800px;
+
+    /* Active Colors */
+    --bgnd-color: white;
+    --border-color: darkgray;
+    --font-color: black;
+    --link-color: rgb(35, 55, 168);
+    --header-color: rgb(72, 228, 255);
+
 }
+
+html{
+    background-color: var(--bgnd-color);
+}
+
+
 
 body{
     font-family: Roboto mono;
+    color: var(--font-color);
     padding: 1rem;
 }
 
+a {
+    color: var(--link-color);
+}
 
 header{
     display: flex;
     max-width: var(--page-width);
     margin: 1rem auto;
-    background-color: rgb(72, 228, 255);
-    border: 2px solid darkgray;
+    background-color: var(--header-color);
+    border: 2px solid var(--border-color);
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -21,7 +39,7 @@ header{
 header img{
     width: 150px;
     margin: 1rem;
-    border: solid 2px darkgray;
+    border: solid 2px var(--border-color);
     border-radius: 5px;
 }
 Header span{
@@ -35,7 +53,6 @@ Header span{
     font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: #000;
  	position: absolute;
 	top: 18rem;
 	right: 2rem;
@@ -67,17 +84,6 @@ nav a{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 main{
     display: grid;
     grid-template-columns: 1fr;
@@ -89,7 +95,7 @@ main{
 .card{
     margin: 5px;
     padding: 5px;
-    border: solid 2px darkgray;
+    border: solid 2px var(--border-color);
     border-radius: 5px;
 }
 
