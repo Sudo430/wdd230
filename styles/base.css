@@ -48,6 +48,15 @@ Header span{
     font-size: xx-large;
 }
 
+#contrastButton{
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+
 
 #menu{
     font-size: 1.5rem;
@@ -75,13 +84,13 @@ nav{
     align-items: center;
     justify-items: center;
 }
-nav a{
+nav a , #contrastButton{
     display: none;
     margin-top: 0px;
     padding: 5px;
 }
 
-.open > a {
+.open > a ,.open > #contrastButton{
     display: inline;
 }
 
