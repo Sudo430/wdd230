@@ -9,6 +9,20 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    
+    nav{
+        display: inline;
+    }
+    nav ul{
+        flex-direction: row;
+    }
+
+
+
+    /* hamberger */
+    #menu{
+        display: none;
+    }
 
     /* hero */
     #hero{
