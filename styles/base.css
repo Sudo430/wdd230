@@ -37,7 +37,8 @@ header{
     align-items: center;
 }
 header img{
-    width: 150px;
+    width: 25%;
+    height: auto;
     margin: 1rem;
     border: solid 2px var(--border-color);
     border-radius: 5px;
@@ -63,7 +64,7 @@ Header span{
 	border: 0;
 	background: none;
  	position: absolute;
-	top: 18rem;
+	top: 13rem;
 	right: 2rem;
 }
 
@@ -103,6 +104,32 @@ main{
     margin-top: 0;
 }
 
+
+
+.hero{
+    position: relative;
+    max-width: 960px;
+}
+.hero img{
+    width: 100%;
+    height: auto;
+    border: solid 2px var(--border-color);
+    border-radius: 5px;
+}
+
+.hero-lable{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.hero-lable h2{
+    padding: 10px;
+    background-color: rgba(207, 206, 206, 0.37);
+    border-radius: 5px;
+    color: black;
+}
+
 .card{
     margin: 5px;
     padding: 5px;
@@ -120,6 +147,12 @@ ul{
 }
 li{
     list-style-type: none;
+}
+
+
+#map{
+    border-radius: 5px;
+    margin: 5px;
 }
 
 footer{

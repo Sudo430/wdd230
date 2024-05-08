@@ -16,19 +16,19 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <link rel="icon" href="/wdd230/favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
     <meta property="og:title" content="Tyler Dickey - WDD 230 - Web Frontend Development">
     <meta property="og:url" content="https://sudo430.github.io/wdd230/">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://raw.githubusercontent.com/Sudo430/wdd230/main/images/og-image.jpg">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Sudo430/wdd230/main/images/og-image.webp">
     
 
 
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Picture of Tyler Dickey">
+        <img src="images/profile.webp" alt="Picture of Tyler Dickey" loading="lazy" width="800" height="951">
         <span>Tyler Dickey</span>
         
     </header>
@@ -41,6 +41,20 @@
         <button id="contrastButton" type="button">Dark mode</button>
     </nav>
     <main>
+
+        <div class="hero">
+            <picture class="hero-img">
+                <source media="(max-width: 500px)" srcset="images/hero.webp" width="400" height="200">
+                <source media="(max-width: 960px)" srcset="images/hero-large.webp" width="960" height="480">
+                <img src="images/hero-large.webp" alt="Loagn Temple" loading="lazy" width="960" height="480">
+            </picture>
+
+            <div class="hero-lable">
+                <h2>Logan UT Temple</h2>
+            </div>
+        </div>
+
+
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
@@ -56,8 +70,10 @@
         </section>
         <section class="card">
             <h2>Informaion</h2>
-            <p>place holer Informaion</p>
+            <p>Visit Count: <span id="visit-count"></span></p>
         </section>
+
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d75566.34732292271!2d-111.83978872194592!3d41.780074519073736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1715200143471!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <p>&copy; <span id="year"></span> | Tyler Dickey | Utah</p>
