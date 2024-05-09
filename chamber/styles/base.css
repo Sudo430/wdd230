@@ -82,24 +82,42 @@ main{
 
 /* hero div */
 #hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
 }
 
 #hero img{
     z-index: -1;
-    max-width: 750px;
+    width: 100%;
     height: auto;
+    min-height: 230px;
     border: solid 2px darkgray;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 #hero h2, #hero p, #hero a{
-    max-width: 650px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* max-width: 100%; */
     background-color: #e0e0e0c2;
     padding: 5px;
     border-radius: 5px;
+}
+
+#hero h2{
+    top: 0px;
+    min-width: 154px;
+
+}
+
+#hero p{
+    top: 50px;
+    min-width: 300px;
+}
+
+#hero a{
+    top: 190px;
 }
 
 /* sections */
