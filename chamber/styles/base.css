@@ -171,3 +171,50 @@ main{
 footer{
     text-align: center;
 }
+
+
+/* Discover page */
+
+#welcome{
+    text-align: center;
+}
+
+.side-bar{
+    border: solid 2px darkgray;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.discover-pic{
+    position: relative;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.discover-pic img{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 5px;
+    border: solid 2px darkgray;
+    object-fit: cover;
+    
+}
+
+#tall-pic{
+    height: 500px;
+}
+
+.discover-pic h3{
+    position: absolute;
+    bottom: 10px;
+    padding:5px 0;
+    width: 396px;
+    text-align: center;
+    background-color: rgba(232, 244, 255, 0.692);
+}
