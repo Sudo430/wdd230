@@ -1,0 +1,42 @@
+:root{
+    --border-var:solid 1px black;
+}
+
+header{
+    text-align: center;
+}
+
+table{
+    margin: 0 auto;
+    border: var(--border-var);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead > tr > th:first-child{
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+thead th {
+    background-color: gray;
+}
+
+tr{
+    border-top: var(--border-var);
+}
+
+th, td{
+    padding: 5px;
+    border-left: var(--border-var);
+}
+
+tr:nth-child(even){
+    background-color: lightgray;
+}
+
+caption{
+    caption-side: bottom;
+    font-size: small;
+}
