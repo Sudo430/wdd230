@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler Dickey - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Tyler Dickey's course assignment portal for WDD 230 - Web Frontend Development">
+    <meta name="author" content="Tyler Dickey">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Tyler Dickey - WDD 230 - Web Frontend Development">
+    <meta property="og:url" content="https://sudo430.github.io/wdd230/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Sudo430/wdd230/main/images/og-image.webp">
+    
+
+
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Picture of Tyler Dickey" loading="lazy" width="800" height="951">
+        <span>Tyler Dickey</span>
+        <button id="menu" type="button"> </button>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="week01/chamber-site-plan.html">Site Plan</a>
+        <a href="form.html">Form</a>
+        <button id="contrastButton" type="button">Dark mode</button>
+    </nav>
+
+    <main>
+
+
+
+        <Form method="get" action="record.html" class="site-form">
+            <fieldset>
+                <legend>Feedback</legend>
+                <label >Username*<input type="text" name="username" id="username" required></label>
+                <label>Password*<input type="password" name="passowrd" id="passwd1" pattern="[a-zA-Z0-9]{8,}" required></label>
+                <label>Confirm Password*<input type="password" name="passowrd" id="passwd2" pattern="[a-zA-Z0-9]{8,}" required></label>
+                <div id="passwd-msg"></div>
+
+                <label>BYUI Email*<input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid @byui.edu email address" required></label>
+                <label>Page Rating <input type="range" name="rating" id="rating" min="0" max="10" value="0" step="1" list="rangevalues"></label>
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </fieldset>
+            <input type="submit" value="Send rating">
+        </Form>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Tyler Dickey | Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/checkPasswd.js"></script>
+</body>
+</html>
