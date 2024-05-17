@@ -235,20 +235,45 @@ footer{
     display: block;
     width: 98%;
     height: 44px;
-    margin-top: 0.2;
+    margin-top: 0.2rem;
     border: solid 2px darkgray;
     border-radius: 3px;
+}
+
+#radio-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+#radio-buttons{
+    margin: 1rem 0;
+}
+#radio-buttons label{
+    display: flex;
+    grid-column: 1/2;
 }
 
 #join-form input[type="radio"]{
     display: inline;
     max-height: 20px;
-    width: 98%;
+    max-width: 20px;
+    margin-left: 5px;
+
 }
+
+.desc{
+    display: none;
+    grid-column: 2/3;
+    grid-row: 1/5;
+}
+
 
 #join-form textarea{
     display: block;
     width: 98%;
+    height: 5rem;
+    max-width: 570px;
 }
 
 #join-form input[type="submit"]{

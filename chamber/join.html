@@ -50,14 +50,22 @@
                 <label>Phone:<input type="tel" name="phone" id="phone" required></label>
                 <label>Business/Organization's Name:<input type="text" name="orgname" id="orgname" required></label>
 
-                <label>Non Profit Membership<input type="radio" name="membership" id="npm"></label>
-                <label>Bronze Membership<input type="radio" name="membership" id="bronze"></label>
-                <label>Silver Membership<input type="radio" name="membership" id="silver"></label>
-                <label>Gold Membership<input type="radio" name="membership" id="gold"></label>
+                <div id="radio-buttons">
+                    <label>Non Profit Membership<input type="radio" name="membership" id="npm"></label>
+                    <div class="desc" id="n">Non Profit member description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, dolor!</div>
+
+                    <label>Bronze Membership<input type="radio" name="membership" id="bronze"></label>
+                    <div class="desc" id="b">bronze member description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci magni repudiandae reprehenderit sed consectetur tempore.</div>
+
+                    <label>Silver Membership<input type="radio" name="membership" id="silver"></label>
+                    <div class="desc" id="s">silver member description Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+
+                    <label>Gold Membership<input type="radio" name="membership" id="gold"></label>
+                    <div class="desc" id="g">gold member description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque esse ipsam unde!</div>
+                </div>
                 
-                <label>Business/Organization's Description <textarea type="textarea" name="desc" id="desc"></textarea></label>
-                <!-- hidden time stamp HERE -->
-                <input type="hidden" name="timestamp">
+                <label>Business/Organization's Description <textarea name="desc" id="desc"></textarea></label>
+                <input type="hidden" name="timestamp" value="">
 
                 <input type="submit" value="Aplly For Membership">
             </fieldset>
@@ -71,5 +79,6 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/joinForm.js"></script>
 </body>
 </html>
