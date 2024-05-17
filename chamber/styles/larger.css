@@ -90,4 +90,9 @@
         width: 100%;
         justify-self: center;
     }
+
+    /* thankyou page */
+    #thankyou{
+        grid-column: 1/3;
+    }
 }

@@ -220,9 +220,12 @@ footer{
 }
 
 /* Join us page */
+
+#join-form legend{
+    padding: 0 5px;
+}
 #join-form fieldset{
-    border: solid 2px darkgray;
-    border-radius: 5px;
+    border: none ;
 }
 
 #join-form label{
@@ -238,6 +241,7 @@ footer{
     margin-top: 0.2rem;
     border: solid 2px darkgray;
     border-radius: 3px;
+    background-color: #06c7c715;
 }
 
 #radio-buttons{
@@ -279,4 +283,11 @@ footer{
 #join-form input[type="submit"]{
     margin-top: 1rem;
     width: 99%;
+}
+
+
+/* thank you page */
+
+#thankyou{
+    text-align: center;
 }
