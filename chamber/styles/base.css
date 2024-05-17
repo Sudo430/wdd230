@@ -218,3 +218,34 @@ footer{
     text-align: center;
     background-color: rgba(232, 244, 255, 0.692);
 }
+
+/* Join us page */
+#join-form fieldset{
+    border: solid 2px darkgray;
+    border-radius: 5px;
+}
+
+#join-form label{
+    margin-top: 0.5rem;
+    display: block;
+
+}
+
+#join-form input{
+    display: block;
+    width: 98%;
+    height: 44px;
+    border: solid 2px darkgray;
+    border-radius: 3px;
+}
+
+#join-form input[type="radio"]{
+    display: inline;
+    max-height: 20px;
+    width: 98%;
+}
+
+#join-form input[type="submit"]{
+    margin-top: 1rem;
+    width: 99%;
+}
