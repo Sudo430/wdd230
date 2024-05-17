@@ -235,6 +235,7 @@ footer{
     display: block;
     width: 98%;
     height: 44px;
+    margin-top: 0.2;
     border: solid 2px darkgray;
     border-radius: 3px;
 }
@@ -242,6 +243,11 @@ footer{
 #join-form input[type="radio"]{
     display: inline;
     max-height: 20px;
+    width: 98%;
+}
+
+#join-form textarea{
+    display: block;
     width: 98%;
 }
 
