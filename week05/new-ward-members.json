@@ -1,0 +1,31 @@
+{
+    "familyName" : "Family-name",
+    "moveInDate" : "month-day-year",
+    "numberOfRecords" : 4,
+    "visitedByBishopric" : false,
+    "familyMembers" : [
+        {
+            "name" : "name",
+            "gender" : "M",
+            "birthdate" : "month-day-year"
+        },
+
+        {
+            "name" : "name",
+            "gender" : "F",
+            "birthdate" : "month-day-year"
+        },
+
+        {
+            "name" : "name",
+            "gender" : "M",
+            "birthdate" : "month-day-year"
+        },
+
+        {
+            "name" : "name",
+            "gender" : "F",
+            "birthdate" : "month-day-year"
+        }
+    ]
+}
