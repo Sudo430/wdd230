@@ -138,6 +138,16 @@ main{
     border-radius: 5px;
 }
 
+.card p{
+    text-align: center;
+}
+
+#weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h1, h2{
     margin-top: 0;
     text-align: center;
