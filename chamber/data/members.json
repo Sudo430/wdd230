@@ -1,0 +1,21 @@
+{
+    "members":[
+        {
+            "name": "Company Name",
+            "addresse": "22 W. somewhere dr.",
+            "phone": "(xxx)-xxx-xxxx",
+            "url": "companyurl.com",
+            "imageFileName": "",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Company Name2",
+            "addresse": "23 W. somewhere dr.",
+            "phone": "(xxx)-xxx-xxxx",
+            "url": "companyurl2.com",
+            "imageFileName": "",
+            "membership": "Gold"
+        }
+        
+    ]
+}
