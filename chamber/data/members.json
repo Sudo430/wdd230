@@ -1,20 +1,60 @@
 {
     "members":[
         {
-            "name": "Company Name",
-            "addresse": "22 W. somewhere dr.",
-            "phone": "(xxx)-xxx-xxxx",
-            "url": "companyurl.com",
-            "imageFileName": "",
+            "name": "Quantum Innovations, Inc.",
+            "addresse": "1234 Quantum Street, Suite 42, Neo City, XY 98765",
+            "phone": "+1 (555) 123-4567",
+            "url": "quantum-innovations.com",
+            "imageFileName": "images/quantum-innovations-inc.webp",
             "membership": "Bronze"
         },
         {
-            "name": "Company Name2",
-            "addresse": "23 W. somewhere dr.",
-            "phone": "(xxx)-xxx-xxxx",
-            "url": "companyurl2.com",
-            "imageFileName": "",
+            "name": "Stellar Solutions Ltd.",
+            "addresse": "567 Star Avenue, Galaxy Towers, Orion City, ZW 54321",
+            "phone": "+1 (555) 987-6543",
+            "url": "stellar-solutions.net",
+            "imageFileName": "images/stellar-solutions-ltd.webp",
             "membership": "Gold"
+        },
+        {
+            "name": "Nebula Dynamics Corp.",
+            "addresse": "789 Nebula Road, Celestial Plaza, Andromeda Town, AB 12345",
+            "phone": "+1 (555) 789-0123",
+            "url": "nebula-dynamics.org",
+            "imageFileName": "images/nebula-dynamics-Corp.webp",
+            "membership": "Silver"
+        },
+        {
+            "name": "Cosmic Ventures LLC",
+            "addresse": "101 Milky Way Boulevard, Cosmic Center, Sagittarius Heights, CD 67890",
+            "phone": "+1 (555) 234-5678",
+            "url": "cosmic-ventures.com",
+            "imageFileName": "images/cosmic-ventures-llc.webp",
+            "membership": ""
+        },
+        {
+            "name": "AstroTech Solutions",
+            "addresse": "4321 Starlight Lane, Astro Tower, Gemini City, EF 13579",
+            "phone": "+1 (555) 345-6789",
+            "url": "astrotech-solutions.io",
+            "imageFileName": "images/astrotech-solutions.webp",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Galactic Innovators",
+            "addresse": "876 Galaxy Drive, Quasar Building, Pegasus District, GH 24680",
+            "phone": "+1 (555) 876-5432",
+            "url": "galactic-innovators.co",
+            "imageFileName": "images/galactic-innovators.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "Orbit Systems, LLC",
+            "addresse": "987 Orbit Avenue, Satellite Suite, Ursa Minor Town, IJ 97531",
+            "phone": "+1 (555) 432-1098",
+            "url": "orbit-systems.net",
+            "imageFileName": "images/orbit-systems-llc.webp",
+            "membership": "Silver"
         }
         
     ]

@@ -291,3 +291,83 @@ footer{
 #thankyou{
     text-align: center;
 }
+
+/* directory page */
+
+#dir button{
+    margin-bottom: 10px;
+    height: 44px;
+    width: 100px;
+    background-color: #08bdbd;
+    border: solid 2px lightgray;
+    border-radius: 5px;
+}
+
+#dir button:hover{
+    background-color: #099999;
+}
+
+
+#dir{
+    display:inline;
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+#comp-dir-gallary.show{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+    justify-items: center;
+}
+
+#comp-dir-gallary section{
+    text-align: center;
+    height: 280px;
+    border: solid 2px darkgray;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.gallary h3, .gallary span{
+    margin: 0;
+}
+
+/* hides the desktop veiw from mobile screens */
+#comp-dir-list.show{
+    display: none;
+    
+
+}
+
+#m-comp-dir-list.show{
+    display: table;
+    width: 100%;
+    border: solid thin darkgray;
+    border-collapse: collapse;
+}
+
+#comp-dir-list tr{
+    height: 50px;
+}
+
+#m-comp-dir-list td{
+    padding: 10px;
+    line-height: 1.3rem;
+}
+
+#comp-dir-list tr:nth-child(even),
+#comp-dir-list thead
+{
+    background-color: lightblue;
+}
+#m-comp-dir-list tr:nth-child(odd),
+#m-comp-dir-list thead{
+    background-color: lightblue;
+}
+

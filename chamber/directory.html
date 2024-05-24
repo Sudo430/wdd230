@@ -30,7 +30,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="">Events</a></li>
-                <li><a href="">Articles</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
@@ -38,8 +38,31 @@
         </nav>
     </header>
 
-    <main>
-        <div id="comp-dir"></div>
+    <main id="dir">
+        <h2>Business Directory</h2>
+        <button id="toggle-veiw">List</button>
+
+        <div id="comp-dir-gallary" class="show"></div>
+
+        <table id="comp-dir-list" class="hide">
+            <thead>
+                <tr>
+                    <th scope="col">Member Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col" style="width: 160px;">Phone Number</th>
+                    <th scope="col">Website</th>
+                </tr>
+            </thead>
+            <tbody id="list">
+                
+            </tbody>
+        </table>
+
+        <table id="m-comp-dir-list" class="hide">
+            <tbody id="m-list">
+
+            </tbody>
+        </table>
     </main>
 
     <footer>

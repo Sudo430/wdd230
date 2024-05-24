@@ -95,4 +95,21 @@
     #thankyou{
         grid-column: 1/3;
     }
+
+    /* directory */
+    #dir{
+        display:inline;
+        text-align: center;
+    }
+    
+    #comp-dir-list.show{
+        display: table;
+        height: 500px;
+        border-collapse: collapse;
+        border: solid thin darkgray;
+    }
+
+    #m-comp-dir-list.show{
+        display: none;
+    }
 }
