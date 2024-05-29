@@ -1,3 +1,4 @@
+//gets the weather data
 const APIKey = "d056a432efd9ca509120510ec118fa2c";
 const lat = "41.736";
 const lon = "-111.834";
@@ -39,8 +40,8 @@ function displayData(data){
             weatherDescIcon: data.list[i].weather[0].icon
         };
 
-        console.log(new Date(dayData.dayDate * 1000).toLocaleDateString('en-US', { weekday: 'long' }));
-        console.log(dayData);
+        //console.log(new Date(dayData.dayDate * 1000).toLocaleDateString('en-US', { weekday: 'long' }));
+        //console.log(dayData);
 
         const day = document.createElement("div");
 
@@ -62,4 +63,88 @@ function displayData(data){
         weather.appendChild(day);
 
     }
+}
+
+
+//select members for the spotlight
+
+const membersURL = "data/members.json";
+
+apiFetch(membersURL, (data) => {
+    let members = []
+
+    for(let key in data.members){
+        members.push(data.members[key])
+    }
+
+    members = members.filter((member) => member.membership ==="Gold" || member.membership ==="Silver");
+
+    let randomMemberIndex = Math.floor(Math.random() * members.length);
+
+    function displaySpotlight(company){
+        const spotlight = document.querySelector("#spotlight");
+
+        const sec = document.createElement("section");
+        const img = document.createElement("img");
+        const title = document.createElement("h4");
+        const link = document.createElement("a");
+
+        img.setAttribute("src", company.imageFileName);
+        img.setAttribute("alt", `${company.name}'s logo`);
+
+        title.textContent = company.name;
+
+        link.setAttribute("href", company.url)
+        link.textContent = company.url;
+
+        sec.appendChild(img);
+        sec.appendChild(title);
+        sec.appendChild(link);
+
+        spotlight.appendChild(sec);
+    }
+
+    displaySpotlight(members[randomMemberIndex]);
+    
+    members = members.filter((item, i) => i !== randomMemberIndex);
+    randomMemberIndex = Math.floor(Math.random() * members.length);
+
+    displaySpotlight(members[randomMemberIndex]);
+
+    members = members.filter((item, i) => i !== randomMemberIndex);
+    randomMemberIndex = Math.floor(Math.random() * members.length);
+
+    displaySpotlight(members[randomMemberIndex]);
+});
+
+
+// banner that only appears on mondays, tuesdays, and wednesdays
+
+const banner = document.querySelector("#banner");
+const weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+const dayToShowBanner = ["Monday", "Tuesday", "Wednesday"];
+
+let today = weekDays[new Date().getDay()];
+
+//manual control of the day of week for testing
+today = "Wednesday";
+
+if(dayToShowBanner.indexOf(today) > -1){
+        const title = document.createElement("h3");
+        title.textContent = "Join us at our Meet and Great!"
+
+        const text = document.createElement("span");
+        text.textContent = "7:00 PM This Wednesday at the city hall";
+
+        const button = document.createElement("button");
+        button.textContent = "X";
+        button.addEventListener("click", () =>{
+            banner.className = "hide";
+        });
+
+        banner.className = "";
+        banner.appendChild(button);
+        banner.appendChild(title);
+        banner.appendChild(text);
+        
 }

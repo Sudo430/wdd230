@@ -29,17 +29,16 @@
         grid-column: 1/3;
     }
 
-    /* articles */
-    #articles{
-        grid-column: 1/3;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    #articles h3{
+    /* banner */
+    #banner{
         grid-column: 1/3;
     }
-    #articles a{
-        grid-column: 2/3;
+
+    /* spotlight */
+
+
+    #spotlights{
+        grid-column: 1/3;
     }
 
 

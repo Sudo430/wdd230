@@ -120,37 +120,48 @@ main{
 #hero a{
     top: 190px;
 }
+/* banner */
 
-/* sections */
-#spot-light {
-    
-    margin: 10px;
-}
-#spot-light img{
-    width: 300px;
-}
-
-/* articles */
-
-#articles{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-#articles h3{
-    justify-self: center;
-    text-decoration: underline;
-}
-
-#articles article{
+#banner{
+    position: relative;
+    background-color: #27FB6B;
+    padding:10px;
     border: solid 2px darkgray;
-    margin: 5px;
-    padding: 5px;
     border-radius: 5px;
 }
-#articles a{
-    justify-self: end;
+
+#banner h3{
+    margin: 0px;
 }
+
+#banner button {
+    
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: black;
+}
+
+
+/* Spotlight */
+#spotlight {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+#spotlight section{
+    margin: 10px;
+    padding: 5px;
+    border: solid 2px darkgray;
+    border-radius: 5px;
+}
+
+#spotlight h4{
+    margin: 5px;
+}
+
+
 
 /* events */
 #events{
