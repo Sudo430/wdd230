@@ -32,12 +32,18 @@ function displayMembers(data){
         const description = document.createElement("span");
 
         img.setAttribute("src", memberData.imageFileName);
-        img.setAttribute("alt", `${memberData.name} logo`);
+        img.setAttribute("alt", `${memberData.name}s logo`);
+        img.setAttribute("width","200");
+        img.setAttribute("height", "100");
+        img.setAttribute("loading", "lazy")
         
+        const pic = document.createElement("picture");
+        pic.appendChild(img);
+
         description.innerHTML = `<h3>${memberData.name}</h3>${memberData.addresse}<br>${memberData.phone}<br><a href="${memberData.url}">${memberData.url}</a>`;
 
         member.className = "comp-card";
-        member.appendChild(img);
+        member.appendChild(pic);
         member.appendChild(description);
 
         div.appendChild(member);

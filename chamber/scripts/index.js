@@ -50,7 +50,7 @@ function displayData(data){
         const temp = document.createElement("span");
 
         img.setAttribute("src", `https://openweathermap.org/img/wn/${dayData.weatherDescIcon}.png`)
-        img.setAttribute("alt", `picturn of ${dayData.weatherDesc}`)
+        img.setAttribute("alt", `picture of ${dayData.weatherDesc}`)
 
         desc.textContent = dayData.weatherDesc;
 
@@ -127,7 +127,7 @@ const dayToShowBanner = ["Monday", "Tuesday", "Wednesday"];
 let today = weekDays[new Date().getDay()];
 
 //manual control of the day of week for testing
-today = "Wednesday";
+//today = "Wednesday";
 
 if(dayToShowBanner.indexOf(today) > -1){
         const title = document.createElement("h3");

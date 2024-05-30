@@ -1,0 +1,7 @@
+* check and fix any broken links.
+* check all images and make sure they are web optimized.
+* make events look better on index.
+* fix alt text on images on home page.
+* fix hover effect on the discover page
+* remove or // all console.log() and debug code.
+
